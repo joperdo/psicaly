@@ -20,10 +20,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5px;
+    padding: 20px 20px;
     width: 100%;
     max-width: 1000px;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .profile {
@@ -78,6 +79,147 @@ nav {
     justify-content: center;
 }
 
+.title {
+  padding: 0 20px;
+}
+
+.title h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+  
+.doctors-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.doctor-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #36CECC;
+  flex-shrink: 0;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #CDE3D4;
+  border-radius: 16px;
+  padding: 20px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 340px; /* garante altura mínima comum */
+}
+
+.card h1 {
+  font-size: 20px;
+  color: #075B76;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.card img {
+  max-height: 120px; /* altura máxima padronizada */
+  width: auto;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: #075B76;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #05495E;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #CDE3D4;
+  border-radius: 16px;
+  padding: 20px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 200px; /* garante altura mínima comum */
+}
+
+.card h1 {
+  font-size: 20px;
+  color: #075B76;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.card img {
+  max-height: 90px; /* altura máxima padronizada */
+  width: auto;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: #075B76;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #05495E;
+}
+
+
 tab {
     position: fixed;
     bottom: 0;
@@ -86,22 +228,22 @@ tab {
     justify-content: space-around;
     padding: 12px 0;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.2);
-  }
+}
   
-  .tab-item {
+.tab-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #07506A;
     font-size: 12px;
-  }
+}
   
-  .tab-item .material-symbols-outlined {
+.tab-item .material-symbols-outlined {
     font-size: 28px;
-  }
+}
   
-  .tab-item.active {
+.tab-item.active {
     color: #2FE9D2;
-  }
-
+}
+  
 
