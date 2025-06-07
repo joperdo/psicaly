@@ -111,6 +111,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px 0px;
+  margin-bottom: 5%;
 }
 
 .card {
@@ -257,8 +258,72 @@ tab {
 }
 
 .card-doctors .botao:hover {
-  background-color: #05485d;
+  background-color: #075B76;
 }
 
+/* infos */
+section.section-informacoes img {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 5%;
+}
 
+section.section-informacoes h1{
+  font-size: 35px;
+  color: #075B76;
+  margin-bottom: 2%;
+}
 
+section.section-informacoes p{
+  font-size: 12px;
+  margin-bottom: 5%;
+}
+
+.footer-agendar {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+
+.agendar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  background-color: transparent; 
+}
+
+.icone-msg {
+  background-color: #075B76; 
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0; 
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1, 
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  font-size: 20px;
+}
+
+.btn-agendar {
+  width: 300px;
+  background-color: #cde5d2; 
+  color: #075B76;            
+  border: none;
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+}

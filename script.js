@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const isIndex = window.location.pathname.includes("index.html") || window.location.pathname === "/";
     const isProfissionais = window.location.pathname.includes("profissionais.html");
+    const isInfos = window.location.pathname.includes("infos.html");
 
     // === FUNCIONALIDADES DA index.html ===
     if (isIndex) {
@@ -49,4 +50,31 @@ document.addEventListener("DOMContentLoaded", () => {
             searchInput.focus();
         }
     }
+
+    // === FUNCIONALIDADES DA infos.html ===
+    if (isInfos) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id"); // Ex: 'gabriela', 'pedro', etc.
+
+        // Esconde todas as sections
+        const sections = document.querySelectorAll(".section-informacoes");
+        sections.forEach(section => section.style.display = "none");
+
+        // Mostra apenas a section correspondente
+        if (id) {
+            const targetSection = document.getElementById(`${id}-infos`);
+            if (targetSection) {
+                targetSection.style.display = "block";
+            }
+        }
+
+        // Voltar para profissionais.html ao clicar no botão de voltar
+        const voltarIcone = document.querySelector("nav .voltar-icone");
+        if (voltarIcone) {
+            voltarIcone.addEventListener("click", () => {
+                window.location.href = "profissionais.html";
+            });
+        }
+    }
 });
+
