@@ -207,7 +207,6 @@ tab {
 
 .nav-titulo {
   font-size: 24px;
-  font-weight: 500;
   color: #075B76;
   margin: 0;
 }
@@ -326,4 +325,94 @@ section.section-informacoes p{
   font-size: 16px;
   cursor: pointer;
   font-family: inherit;
+}
+
+/* calendario */
+
+.calendario-section {
+  margin-bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horarios-section {
+  text-align: center;
+}
+
+.horarios-section h2 {
+  font-size: 24px;
+  color: #075B76;
+  margin-bottom: 10%;
+}
+
+.horarios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 20%;
+}
+
+.horario-btn {
+  padding: 15px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: #E6E6E6;
+  font-weight: bold;
+  color: #176585;
+  cursor: pointer;
+}
+
+.horario-btn.ativo {
+  background-color: #cde5d2;
+}
+
+/* Flatpickr custom */
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange {
+  background-color: #cde5d2;
+  color: #000;
+}
+
+/* Parte verde arredondada com o check */
+.check {
+  background-color: #cde5d2;
+  width: 100vw; 
+  margin-left: -20px;
+  margin-right: -20px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 0 0 20px 0;
+  height: 50vh; 
+}
+
+.check img {
+  width: 60%;
+  height: auto;
+}
+
+/* Texto abaixo */
+.sucesso {
+  margin-top: 20%;
+  text-align: center;
+  padding: 0px 60px;
+  margin-bottom: 40%;
+}
+
+.sucesso h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #176585;
+  margin-bottom: 8px;
+}
+
+.sucesso p {
+  font-size: 18px;
+  color: #A9A9A9;
 }

@@ -75,6 +75,74 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.location.href = "profissionais.html";
             });
         }
-    }
-});
 
+        // Quando clicar no botão "Agendar encontro", vai para calendario.html
+        const btnAgendar = document.querySelector(".btn-agendar");
+        if (btnAgendar) {
+            btnAgendar.addEventListener("click", () => {
+                window.location.href = "calendario.html";
+            });
+        }
+    }
+
+    // === FUNCIONALIDADES DA calendario.html ===
+    if (window.location.pathname.includes("calendario.html")) {
+        // Voltar para infos.html
+        const voltarIcone = document.querySelector("nav .voltar-icone");
+        if (voltarIcone) {
+            voltarIcone.addEventListener("click", () => {
+                window.location.href = "infos.html";
+            });
+        }
+
+        // Botão "Agendar agora" vai para sucesso.html
+        const btnAgendarAgora = document.querySelector(".btn-agendar");
+        if (btnAgendarAgora) {
+            btnAgendarAgora.addEventListener("click", () => {
+                window.location.href = "sucesso.html";
+            });
+        }
+
+        // Inicializa o flatpickr no seletor de data
+        flatpickr("#seletor-data", {
+            inline: true,
+            locale: "pt",
+            minDate: "today"
+        });
+
+        // Ativação de classe nos botões de horário
+        const botoesHorario = document.querySelectorAll(".horario-btn");
+        botoesHorario.forEach(btn => {
+            btn.addEventListener("click", () => {
+                botoesHorario.forEach(b => b.classList.remove("ativo"));
+                btn.classList.add("ativo");
+            });
+        });
+    }
+
+    // === FUNCIONALIDADES DA sucesso.html ===
+    if (window.location.pathname.includes("sucesso.html")) {
+        const btnVoltarInicio = document.querySelector(".btn-agendar");
+        if (btnVoltarInicio) {
+            btnVoltarInicio.addEventListener("click", () => {
+                window.location.href = "index.html";
+            });
+        }
+    }
+
+    // Adicionando flatpickr para selecionar data (uso geral, fora da página de calendário)
+    flatpickr("#seletor-data", {
+        inline: true,
+        locale: "pt",
+        minDate: "today"
+    });
+
+    // Adicionando ativação de classe nos botões de horário (uso geral)
+    const botoesHorario = document.querySelectorAll(".horario-btn");
+    botoesHorario.forEach(btn => {
+        btn.addEventListener("click", () => {
+            botoesHorario.forEach(b => b.classList.remove("ativo"));
+            btn.classList.add("ativo");
+        });
+    });
+});

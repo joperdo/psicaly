@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>psicaly</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span class="material-symbols-outlined voltar-icone">chevron_left</span>
+      <h1 class="nav-titulo">Data e Horário</h1>
+      <span class="material-symbols-outlined invisivel">chevron_left</span>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Calendário -->
+    <section class="calendario-section">
+      <input type="text" id="seletor-data" style="display: none;" />
+    </section>
+
+    <!-- Horários disponíveis -->
+    <section class="horarios-section">
+      <h2>Horários disponíveis</h2>
+      <div class="horarios">
+        <button class="horario-btn">05:00</button>
+        <button class="horario-btn">08:00</button>
+        <button class="horario-btn">11:30</button>
+        <button class="horario-btn">12:00</button>
+        <button class="horario-btn">15:00</button>
+        <button class="horario-btn">22:00</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-agendar">
+    <div class="agendar-wrapper">
+      <button class="btn-agendar">Agendar agora</button>
+    </div>
+  </footer>
+</body>
+</html>
