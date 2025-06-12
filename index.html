@@ -24,7 +24,7 @@
             </div>
     
             <div class="notification">
-                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined notification">notifications</span>
             </div>
         </nav>
     </header>
@@ -36,11 +36,11 @@
                 </div>
 
                 <div class="doctors-list">
-                    <div class="doctor-photo" style="background-image: url('assets/doctor1.png')"></div>
-                    <div class="doctor-photo" style="background-image: url('assets/doctor2.png')"></div>
-                    <div class="doctor-photo" style="background-image: url('assets/doctor3.png')"></div>
-                    <div class="doctor-photo" style="background-image: url('assets/doctor4.png')"></div>
-                    <div class="doctor-photo" style="background-image: url('assets/doctor5.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=gabriela'" class="doctor-photo" style="background-image: url('assets/doctor1.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=pedro'" class="doctor-photo" style="background-image: url('assets/doctor2.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=marcos'" class="doctor-photo" style="background-image: url('assets/doctor3.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=maria'" class="doctor-photo" style="background-image: url('assets/doctor4.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=paula'" class="doctor-photo" style="background-image: url('assets/doctor5.png')"></div>
                 </div>
             </section>
 
@@ -53,7 +53,7 @@
                     <div class="card">
                         <h1>Comunidade</h1>
                         <img src="assets/card1.png">
-                        <button>Participar</button>
+                        <button onclick="window.location.href='comunidade.html'">Participar</button>
                     </div>
                     <div class="card">
                         <h1>Psicólogos</h1>
@@ -75,7 +75,7 @@
     </main>
     
     <tab>
-        <div class="tab-item active">
+        <div class="tab-item active" onclick="window.location.href='index.html'">
             <span class="material-symbols-outlined">home</span>
             <span class="tab-label">Home</span>
         </div>
@@ -83,7 +83,7 @@
             <span class="material-symbols-outlined">calendar_month</span>
             <span class="tab-label">Encontros</span>
         </div>
-        <div class="tab-item">
+        <div class="tab-item" onclick="window.location.href='conversas.html'">
             <span class="material-symbols-outlined">chat</span>
             <span class="tab-label">Atendimento</span>
         </div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psicaly</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="gabriela-chat">
+        <span class="material-symbols-outlined voltar-icone" onclick="window.location.href='conversas.html'">chevron_left</span>
+        <h1 class="nav-titulo">Dra. Gabriela</h1>
+        <span class="material-symbols-outlined telefone-icone">call</span>
+        </nav>
+
+        <nav id="maria-chat">
+        <span class="material-symbols-outlined voltar-icone" onclick="window.location.href='conversas.html'">chevron_left</span>
+        <h1 class="nav-titulo">Dra. Maria</h1>
+        <span class="material-symbols-outlined telefone-icone">call</span>
+        </nav>
+
+        <nav id="marcos-chat">
+        <span class="material-symbols-outlined voltar-icone" onclick="window.location.href='conversas.html'">chevron_left</span>
+        <h1 class="nav-titulo">Dr. Marcos</h1>
+        <span class="material-symbols-outlined telefone-icone">call</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chat-container" id="chat-container">
+        </section>
+
+        <form id="chat-form" class="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Digite aqui" autocomplete="off" required />
+        <button type="submit" class="material-symbols-outlined">send</button>
+        </form>
+    </main>
+
+
+    <tab>
+        <div class="tab-item" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">home</span>
+            <span class="tab-label">Home</span>
+        </div>
+        <div class="tab-item">
+            <span class="material-symbols-outlined">calendar_month</span>
+            <span class="tab-label">Encontros</span>
+        </div>
+        <div class="tab-item active" onclick="window.location.href='conversas.html'">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="tab-label">Atendimento</span>
+        </div>
+    </tab>
+</body>
+
+</html>

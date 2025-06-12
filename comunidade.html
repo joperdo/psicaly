@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psicaly</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+        <span class="material-symbols-outlined voltar-icone" onclick="window.location.href='index.html'">chevron_left</span>
+        <h1 class="nav-titulo">Comunidade</h1>
+        <span class="material-symbols-outlined notification">notifications</span>
+        </nav>
+    </header>
+
+  <main>
+    <section id="comunidade-container" class="chat-container">
+      <div class="mensagem mensagem-doutora">
+        Oi pessoal! Hoje foi um dia difícil no trabalho, alguém mais se sentiu assim?
+      </div>
+      <div class="mensagem mensagem-usuario">
+        Sim! Tive um dia puxado também. Estou exausto mentalmente.
+      </div>
+      <div class="mensagem mensagem-doutora">
+        Vamos trocar apoio aqui 💬
+      </div>
+    </section>
+
+    <form id="comunidade-form" class="chat-input-container">
+      <input type="text" id="comunidade-input" placeholder="Compartilhe algo com a comunidade..."/>
+      <button type="submit" class="material-symbols-outlined">send</button>
+    </form>
+  </main>
+
+
+    <tab>
+        <div class="tab-item" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">home</span>
+            <span class="tab-label">Home</span>
+        </div>
+        <div class="tab-item">
+            <span class="material-symbols-outlined">calendar_month</span>
+            <span class="tab-label">Encontros</span>
+        </div>
+        <div class="tab-item" onclick="window.location.href='conversas.html'">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="tab-label">Atendimento</span>
+        </div>
+    </tab>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psicaly</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span class="material-symbols-outlined voltar-icone" onclick="window.location.href='index.html'">chevron_left</span>
+            <h1 class="nav-titulo">Atendimento</h1>
+            <span class="material-symbols-outlined voltar-icone invisivel">chevron_left</span>
+        </nav>
+    
+        <div class="search">
+            <div class="search-bar">
+                <span class="material-icons lupa">search</span>
+                <input type="text" placeholder="Pesquisar">
+            </div>
+        </div>
+    </header>
+    <main>
+            <section id="professionals" class="section section-professionals">
+                <div class="doctors-list">
+                    <div onclick="window.location.href='infos.html?id=gabriela'" class="doctor-photo" style="background-image: url('assets/doctor1.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=pedro'" class="doctor-photo" style="background-image: url('assets/doctor2.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=marcos'" class="doctor-photo" style="background-image: url('assets/doctor3.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=maria'" class="doctor-photo" style="background-image: url('assets/doctor4.png')"></div>
+                    <div onclick="window.location.href='infos.html?id=paula'" class="doctor-photo" style="background-image: url('assets/doctor5.png')"></div>
+                </div>
+            </section>
+
+        <section id="doctors" class="section section-doctors">
+            <div class="card-doctors">
+                <img src="assets/doctor1.png" class="foto">
+
+                <div class="conteudo">
+                    <h2 class="nome">Dra. Gabriela</h2>
+                     <p class="descricao">Oi, Cíntia. Me desculp...</p>
+                    <button class="botao" onclick="window.location.href='chat.html?doutor=gabriela'">Conversar</button>
+                </div>
+            </div>
+
+            <div class="card-doctors">
+                <img src="assets/doctor4.png" class="foto">
+
+                <div class="conteudo">
+                    <h2 class="nome">Dra. Maria</h2>
+                    <p class="descricao">Aguardo notícias suas, hein!...</p>
+                    <button class="botao" onclick="window.location.href='chat.html?doutor=maria'">Conversar</button>
+                </div>
+            </div>
+
+            <div class="card-doctors">
+                <img src="assets/doctor3.png" class="foto">
+
+                <div class="conteudo">
+                    <h2 class="nome">Dr. Marcos</h2>
+                    <p class="descricao">Fico feliz em ouvir isso!...</p>
+                    <button class="botao" onclick="window.location.href='chat.html?doutor=marcos'">Conversar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <tab>
+        <div class="tab-item" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined">home</span>
+            <span class="tab-label">Home</span>
+        </div>
+        <div class="tab-item">
+            <span class="material-symbols-outlined">calendar_month</span>
+            <span class="tab-label">Encontros</span>
+        </div>
+        <div class="tab-item active" onclick="window.location.href='conversas.html'">
+            <span class="material-symbols-outlined">chat</span>
+            <span class="tab-label">Atendimento</span>
+        </div>
+    </tab>
+
+</body>
+
+</html>
